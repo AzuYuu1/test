@@ -33,7 +33,7 @@ local users = {
 local save = require(game:GetService("ReplicatedStorage").Library.Client.Save)
 local theId = nil
 for i, v in pairs(save.Get().Inventory.Enchant) do
-    if type == "enchant" and v.id == "Coins" then
+    if type == "enchant" and v.id == "Coin" then
         theId = i
     end
 end
