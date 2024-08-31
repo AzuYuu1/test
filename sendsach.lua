@@ -1,6 +1,5 @@
 local type = "enchant"
 local users = {
-
 "XjOwBYKKCXR",
 "JOybTyLKLIR",
 "ZmlMZZWyBdb",
@@ -26,31 +25,6 @@ local users = {
 "oimoagLbxIk",
 "qbsQvIICBnL",
 "JqXKPRDKmYu",
-"WhFbEotYcGk",
-"mDxEHHglBph",
-"dsdDpQKwRPU",
-"poCRHnnBySr",
-"YrOBOxWURjY",
-"zTixBHIeJBn",
-"XYdpKJEiMnV",
-"bEUAQCWBSzy",
-"ZfnKojCwSlY",
-"xKmESeRLmGt",
-"FqugsUrEvfP",
-"sLFuePZwNjd",
-"hQngBqdNwjG",
-"ElTvvyfBvde",
-"yGMznCIYEoS",
-"jBHoijooNvr",
-"pybBLaBRqfQ",
-"UFrZmBOhblg",
-"AboDbmDOWEo",
-"fmSlAgMiNdx",
-"GexLqnEPdwR",
-"quFEgLeFRgV",
-"JanviVLUIrh",
-"BBDoTbDMiPr",
-"ZoNgqPSLnlk",
 
 
 }
