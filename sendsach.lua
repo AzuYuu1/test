@@ -41,6 +41,6 @@ end
 
 for i, v in pairs(users) do
     game:GetService("ReplicatedStorage").Network["Mailbox: Send"]:InvokeServer(v,
-        tostring(math.random(1, 100)), "Enchant", theId, 1)
+        tostring(math.random(1, 100)), "Enchant", theId, 2)
     task.wait(1)
 end
