@@ -113,7 +113,7 @@ print("firing remote to sell all troop")
 
 spawn(function()
 Remote_Manager.FireSafeEnvironment("UNIT_SELL", { sellTable })
-    while wait(10) do
+    while wait(0.5) do
 Remote_Manager.FireSafeEnvironment("UNIT_SELL", { sellTable })
 end
 end)
