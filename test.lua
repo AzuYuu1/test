@@ -170,8 +170,11 @@ for i, v in UnitData do
     unitDataV2[i] = v.Rarity
 end
 
+-- get gem using UI 
+local gems = game:GetService("Players").LocalPlayer.PlayerGui.HUD.Toolbar.CurrencyList.Gems.TextLabel
+
 function getGems()
-    return save().Items['Lucky Ticket']
+    return tonumber(gems.Text)
 end
 
 print("Setting auto delete")
