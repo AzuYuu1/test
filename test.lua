@@ -1,3 +1,14 @@
+
+
+local notifyIfRarity = {
+    ["Rare"] = false,
+    ["Epic"] = false,
+    ["Legendary"] = false,
+    ["Mythic"] = false,
+    ["Secret"] = false,
+}
+
+
 local sellOfRarity = {
     ["Rare"] = true,
     ["Epic"] = true,
@@ -80,6 +91,18 @@ task.wait(3)
 repeat wait() until Remote_Manager.SafeEnvironment
 print("Loaded")
 
+--game:GetService("ReplicatedStorage").Remotes.FirstTimeSummon:InvokeServer()
+
+
+-- redeem code
+--for i, v in codes do
+--game:GetService("ReplicatedStorage").Remotes.UseCode:InvokeServer(v)
+--task.wait(0.1)
+--end
+
+
+-- changed to tickets
+
 spawn(function()
     Remote_Manager.FireSafeEnvironment("UNIT_EQUIP_BEST", {})
     while wait(10) do
@@ -87,6 +110,14 @@ spawn(function()
     end
 end)
 
+print("Loading")
+local rarityConvert = {
+    [2] = "Rare",
+    [3] = "Epic",
+    [4] = "Legendary",
+    [5] = "Mythic",
+    [6] = "Secret"
+}
 
 function save()
     return game:GetService("ReplicatedStorage").Remotes.GetInventory:InvokeServer()
@@ -100,6 +131,14 @@ for i, v in UnitData do
     unitDataV2[i] = v.Rarity
 end
 
+
+print("Setting auto delete")
+if tostring(game.Players.LocalPlayer.PlayerGui.PAGES.SummonPage.Holder.HolderAutoSell.DefaultButton.AutoDelete_Rare.UIGradient.Color) ~= "0 1 0.454902 0.290196 0 1 1 0.054902 0.0705882 0 " then
+    for i = 2, 4 do
+        print("Firing!")
+        Remote_Manager.FireSafeEnvironment("AUTO_DELETE_RARITY", { tostring(i) })
+    end
+end
 
 print("Selling troops")
 local sellTable = {}
@@ -117,4 +156,8 @@ Remote_Manager.FireSafeEnvironment("UNIT_SELL", { sellTable })
 Remote_Manager.FireSafeEnvironment("UNIT_SELL", { sellTable })
 end
 end)
+
+for i, v in save().Units do
+    local rarity = rarityConvert[unitDataV2[v.Type]]
+
 
