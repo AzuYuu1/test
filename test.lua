@@ -1,4 +1,3 @@
-
 local sellOfRarity = {
     ["Rare"] = true,
     ["Epic"] = true,
@@ -101,13 +100,6 @@ for i, v in UnitData do
     unitDataV2[i] = v.Rarity
 end
 
-print("Setting auto delete")
-if tostring(game.Players.LocalPlayer.PlayerGui.PAGES.SummonPage.Holder.HolderAutoSell.DefaultButton.AutoDelete_Rare.UIGradient.Color) ~= "0 1 0.454902 0.290196 0 1 1 0.054902 0.0705882 0 " then
-    for i = 2, 4 do
-        print("Firing!")
-        Remote_Manager.FireSafeEnvironment("AUTO_DELETE_RARITY", { tostring(i) })
-    end
-end
 
 print("Selling troops")
 local sellTable = {}
