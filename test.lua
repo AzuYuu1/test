@@ -6,7 +6,7 @@ local codes = {
 }
 
 local autoDeleteRarity = {
-    "Rare",
+
 }
 
 local notifyIfRarity = {
