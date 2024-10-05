@@ -75,11 +75,321 @@ getgenv().autoSummon = {
 }
 
 getgenv().macroTroops = {
-"SantaTVMan",
-"ClockSpider",
-"LuckySpeakerman"
+"Drillman",
 }
-local macro = ''
+local macro = '{
+    "53": {
+        "Time": 554,
+        "Type": "VoteSkipWave"
+    },
+    "43": {
+        "Type": "UpgradeTroop",
+        "Time": 449,
+        "Pos": "-6600.30517578125, 7.390037536621094, 63.341678619384766"
+    },
+    "51": {
+        "Time": 534,
+        "Type": "VoteSkipWave"
+    },
+    "41": {
+        "Type": "UpgradeTroop",
+        "Time": 423,
+        "Pos": "-6591.82666015625, 7.390037536621094, 74.27906036376953"
+    },
+    "47": {
+        "Time": 475,
+        "Type": "VoteSkipWave"
+    },
+    "37": {
+        "Type": "UpgradeTroop",
+        "Time": 389,
+        "Pos": "-6592.55029296875, 7.390037536621094, 93.11885070800781"
+    },
+    "45": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 464,
+        "Troop": "Drillman",
+        "Pos": "-6607.8017578125, 7.390037536621094, 74.6326675415039"
+    },
+    "35": {
+        "Type": "UpgradeTroop",
+        "Time": 378,
+        "Pos": "-6591.7431640625, 7.390037536621094, 114.1998291015625"
+    },
+    "49": {
+        "Type": "UpgradeTroop",
+        "Time": 499,
+        "Pos": "-6606.72119140625, 7.390037536621094, 100.21598815917969"
+    },
+    "39": {
+        "Type": "UpgradeTroop",
+        "Time": 405,
+        "Pos": "-6592.47314453125, 7.390037536621094, 82.76387023925781"
+    },
+    "29": {
+        "Type": "UpgradeTroop",
+        "Time": 295,
+        "Pos": "-6606.86474609375, 7.390037536621094, 91.30608367919922"
+    },
+    "1": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 40,
+        "Troop": "Drillman",
+        "Pos": "-6684.986328125, 7.390037536621094, 27.17507553100586"
+    },
+	    "54": {
+        "Rotation": "1",
+        "Type": "UpgradeTroop",
+        "Time": 40,
+        "Troop": "Drillman",
+        "Pos": "-6684.986328125, 7.390037536621094, 27.17507553100586"
+    },
+    "3": {
+        "Time": 64,
+        "Type": "VoteSkipWave"
+    },
+    "2": {
+        "Time": 44,
+        "Type": "VoteSkipWave"
+    },
+		    "55": {
+        "Rotation": "1",
+        "Type": "UpgradeTroop",
+        "Time": 40,
+        "Troop": "Drillman",
+        "Pos": "-6713.3525390625, 7.390037536621094, 40.155025482177734"
+    },
+    "5": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 91,
+        "Troop": "Drillman",
+        "Pos": "-6713.3525390625, 7.390037536621094, 40.155025482177734"
+    },
+    "4": {
+        "Time": 84,
+        "Type": "VoteSkipWave"
+    },
+    "7": {
+        "Time": 104,
+        "Type": "VoteSkipWave"
+    },
+    "6": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 102,
+        "Troop": "Drillman",
+        "Pos": "-6608.2353515625, 7.390037536621094, 120.26495361328125"
+    },
+    "9": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 120,
+        "Troop": "Drillman",
+        "Pos": "-6606.72119140625, 7.390037536621094, 100.21598815917969"
+    },
+    "8": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 110,
+        "Troop": "Drillman",
+        "Pos": "-6608.00927734375, 7.390037536621094, 109.16377258300781"
+    },
+    "27": {
+        "Type": "UpgradeTroop",
+        "Time": 270,
+        "Pos": "-6606.72119140625, 7.390037536621094, 100.21598815917969"
+    },
+    "17": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 176,
+        "Troop": "Drillman",
+        "Pos": "-6606.05078125, 7.390037536621094, 81.75658416748047"
+    },
+    "13": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 163,
+        "Troop": "Drillman",
+        "Pos": "-6591.7431640625, 7.390037536621094, 114.1998291015625"
+    },
+    "21": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 187,
+        "Troop": "Drillman",
+        "Pos": "-6591.82666015625, 7.390037536621094, 74.27906036376953"
+    },
+    "11": {
+        "Time": 139,
+        "Type": "VoteSkipWave"
+    },
+    "23": {
+        "Time": 216,
+        "Type": "VoteSkipWave"
+    },
+    "42": {
+        "Time": 440,
+        "Type": "VoteSkipWave"
+    },
+    "52": {
+        "Type": "UpgradeTroop",
+        "Time": 551,
+        "Pos": "-6600.30517578125, 7.390037536621094, 63.341678619384766"
+    },
+    "40": {
+        "Time": 420,
+        "Type": "VoteSkipWave"
+    },
+    "50": {
+        "Type": "UpgradeTroop",
+        "Time": 529,
+        "Pos": "-6593.0517578125, 7.390037536621094, 102.33746337890625"
+    },
+    "36": {
+        "Type": "UpgradeTroop",
+        "Time": 382,
+        "Pos": "-6593.0517578125, 7.390037536621094, 102.33746337890625"
+    },
+    "46": {
+        "Type": "UpgradeTroop",
+        "Time": 468,
+        "Pos": "-6607.8017578125, 7.390037536621094, 74.6326675415039"
+    },
+    "34": {
+        "Time": 369,
+        "Type": "VoteSkipWave"
+    },
+    "44": {
+        "Type": "UpgradeTroop",
+        "Time": 461,
+        "Pos": "-6617.39892578125, 7.390037536621094, 61.89519500732422"
+    },
+    "48": {
+        "Time": 495,
+        "Type": "VoteSkipWave"
+    },
+    "28": {
+        "Time": 290,
+        "Type": "VoteSkipWave"
+    },
+    "38": {
+        "Time": 399,
+        "Type": "VoteSkipWave"
+    },
+    "10": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 126,
+        "Troop": "Drillman",
+        "Pos": "-6593.55224609375, 7.390037536621094, 123.63410949707031"
+    },
+    "56": {
+        "Type": "UpgradeTroop",
+        "Time": 584,
+        "Pos": "-6684.986328125, 7.390037536621094, 27.17507553100586"
+    },
+    "12": {
+        "Time": 160,
+        "Type": "VoteSkipWave"
+    },
+    "54": {
+        "Type": "UpgradeTroop",
+        "Time": 573,
+        "Pos": "-6607.8017578125, 7.390037536621094, 74.6326675415039"
+    },
+    "33": {
+        "Type": "UpgradeTroop",
+        "Time": 349,
+        "Pos": "-6593.55224609375, 7.390037536621094, 123.63410949707031"
+    },
+    "57": {
+        "Type": "UpgradeTroop",
+        "Time": 592,
+        "Pos": "-6713.3525390625, 7.390037536621094, 40.155025482177734"
+    },
+    "31": {
+        "Time": 327,
+        "Type": "VoteSkipWave"
+    },
+    "55": {
+        "Time": 575,
+        "Type": "VoteSkipWave"
+    },
+    "25": {
+        "Time": 255,
+        "Type": "VoteSkipWave"
+    },
+    "18": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 179,
+        "Troop": "Drillman",
+        "Pos": "-6592.47314453125, 7.390037536621094, 82.76387023925781"
+    },
+    "19": {
+        "Time": 180,
+        "Type": "VoteSkipWave"
+    },
+    "15": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 169,
+        "Troop": "Drillman",
+        "Pos": "-6606.86474609375, 7.390037536621094, 91.30608367919922"
+    },
+    "14": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 166,
+        "Troop": "Drillman",
+        "Pos": "-6593.0517578125, 7.390037536621094, 102.33746337890625"
+    },
+    "24": {
+        "Type": "UpgradeTroop",
+        "Time": 223,
+        "Pos": "-6608.2353515625, 7.390037536621094, 120.26495361328125"
+    },
+    "16": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 172,
+        "Troop": "Drillman",
+        "Pos": "-6592.55029296875, 7.390037536621094, 93.11885070800781"
+    },
+    "26": {
+        "Type": "UpgradeTroop",
+        "Time": 258,
+        "Pos": "-6608.00927734375, 7.390037536621094, 109.16377258300781"
+    },
+    "20": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 183,
+        "Troop": "Drillman",
+        "Pos": "-6600.30517578125, 7.390037536621094, 63.341678619384766"
+    },
+    "30": {
+        "Type": "UpgradeTroop",
+        "Time": 317,
+        "Pos": "-6606.05078125, 7.390037536621094, 81.75658416748047"
+    },
+    "22": {
+        "Rotation": "1",
+        "Type": "PlaceTroop",
+        "Time": 203,
+        "Troop": "Drillman",
+        "Pos": "-6617.39892578125, 7.390037536621094, 61.89519500732422"
+    },
+    "32": {
+        "Time": 348,
+        "Type": "VoteSkipWave"
+    }
+}
+'
 local HttpService = game:GetService("HttpService")
 local decrpytMacro = HttpService:JSONDecode(macro)
 
